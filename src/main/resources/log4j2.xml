@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{ISO8601} [%-5p][%-14.14t][%28.28c{1.1.1.*}] - %m%n"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name= "com.epam.workshop" level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <!-- Root Logger -->
+        <Root level="info" >
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
