@@ -12,6 +12,8 @@ public class App {
 
         final TelegramBot telegramBot = new TelegramBot("name", "token");
         connect(telegramBot);
+
+        log.info("First start was fine. Moving on :)");
     }
 
     private static void connect(TelegramBot telegramBot) {
